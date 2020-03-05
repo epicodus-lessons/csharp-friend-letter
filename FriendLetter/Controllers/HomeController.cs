@@ -17,6 +17,9 @@ namespace FriendLetter.Controllers
       myLetterVariable.Recipient = "Lina";
       myLetterVariable.Sender = "Jasmine";
       return View(myLetterVariable);
-     }
+    }
+
+    [Route("/form")]
+    public ActionResult Form() { return View(); }
   }
 }
