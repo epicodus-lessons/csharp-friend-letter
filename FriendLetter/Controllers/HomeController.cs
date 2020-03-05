@@ -12,7 +12,8 @@ namespace FriendLetter.Controllers
     public string Goodbye() { return "Goodbye friend."; }
 
     [Route("/")]
-    public ActionResult Letter() { 
+    public ActionResult Letter() 
+    { 
       LetterVariable myLetterVariable = new LetterVariable();
       myLetterVariable.Recipient = "Lina";
       myLetterVariable.Sender = "Jasmine";
